@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .nav::after {
+    @apply content-[''] bg-white h-[2px] w-[0%] left-[50%] -translate-x-[50%] -translate-y-[50%] -bottom-[5px] rounded-xl absolute duration-300;
+  }
+  .nav:hover::after {
+    @apply w-[25%];
+  }
+}
