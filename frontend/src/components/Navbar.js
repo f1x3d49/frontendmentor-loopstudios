@@ -25,7 +25,7 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
         </li>
       </ul>
       <button
-        className="flex md:hidden  z-20 relative"
+        className="flex md:hidden transition ease-in-out delay-100 duration-500 z-20 relative"
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
         {navbarOpen ? <Close /> : <Hamburger />}
