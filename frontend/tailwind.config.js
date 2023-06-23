@@ -18,6 +18,10 @@ module.exports = {
           "linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 100%),url('/src/images/mobile/image-hero.jpg')",
         bgHeroDesktop:
           "linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%),url('/src/images/desktop/image-hero.jpg')",
+        bgEarthDesktop:
+          "linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%),url('/src/images/desktop/image-deep-earth.jpg')",
+        bgEarthMobile:
+          "linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%),url('/src/images/mobile/image-deep-earth.jpg')",
       },
     },
   },
