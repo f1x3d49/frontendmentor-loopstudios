@@ -1,3 +1,4 @@
+import AboutSection from "./sections/AboutSection.js";
 import CardSection from "./sections/CardSection.js";
 import Intro from "./sections/Intro.js";
 import LeaderSection from "./sections/LeaderSection.js";
@@ -8,6 +9,7 @@ function App() {
       <Intro />
       <LeaderSection />
       <CardSection />
+      <AboutSection />
     </div>
   );
 }
