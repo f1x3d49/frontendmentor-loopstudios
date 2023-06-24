@@ -1,17 +1,25 @@
 import React from "react";
-import earth from "../images/mobile/image-deep-earth.jpg";
 
-const CardComponent = () => {
+const CardComponent = ({ mobilepic, desktoppic, title }) => {
   return (
-    <div className="w-full h-28 px-4 relative">
-      <img
-        src={earth}
-        alt="eart"
-        className="w-full h-full object-center object-cover"
-      />
-      <h1 className="text-3xl uppercase font-josefin absolute inset-0 flex items-center left-6 text-white">
-        Deep Earth
-      </h1>
+    <div className="relative cursor-pointer mx-4">
+      <div>
+        <img
+          src={mobilepic}
+          alt={title}
+          className="object-cover object-center w-full h-full md:hidden"
+        />
+        <img
+          src={desktoppic}
+          alt={title}
+          className="hidden object-cover object-center w-full h-full md:block"
+        />
+      </div>
+      <div className="absolute inset-0 flex items-end bg-gradient-to-l md:bg-gradient-to-b from-transparent to-[rgba(0,0,0,0.5)] hover:bg-[hsla(0,0%,100%,0.7)] transition duration-300 group">
+        <span className="w-[55%] pb-4 pl-4 pr-4 font-josefin text-3xl text-white uppercase transition duration-300 md:text-4xl md:p-10 group-hover:text-black">
+          {title}
+        </span>
+      </div>
     </div>
   );
 };
