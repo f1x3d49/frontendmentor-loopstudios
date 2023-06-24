@@ -2,7 +2,7 @@ import React from "react";
 
 const CardComponent = ({ mobilepic, desktoppic, title }) => {
   return (
-    <div className="relative cursor-pointer mx-4">
+    <div className="relative cursor-pointer mx-4 md:mx-0">
       <div>
         <img
           src={mobilepic}
